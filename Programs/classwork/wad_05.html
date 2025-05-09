@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .frm {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .myfrm {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .othr {
+            background-color: aliceblue;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .tbls {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Webpage to demonstrate all the basic tag of HTML5</h1>
+    <div class="frm">
+        <h2>Form element:</h2>
+        <form>
+            <div class="">
+                <div>
+                    <label for="search">Search Google:</label>
+                    <input type="text" id="search" name="q">
+                </div>
+                <div>
+                    <h4>Radio Buttons:</h4>
+                    <input type="radio" name="gender" value="Male">
+                    <label for="option1">Male</label>
+                    <input type="radio" name="gender" value="Female">
+                    <label for="option2">Female</label>
+                </div>
+            </div>
+            <div>
+                <h4>Checkboxes:</h4>
+                <input type="checkbox" value="Checkbox 1">
+                <label for="checkbox1">Playing</label>
+                <input type="checkbox" value="Checkbox 2">
+                <label for="checkbox2">Singing</label>
+                <input type="checkbox" value="Checkbox 3">
+                <label for="checkbox3">Dancing</label>
+                <h4>Dropdown:</h4>
+                <select id="dropdown" name="dropdown">
+                    <option value="option1">select Your Country</option>
+                    <option value="option2">Nepal</option>
+                    <option value="option3">India</option>
+                    <option value="option3">Japan</option>
+
+                </select>
+
+            </div>
+            <div>
+                <h4>Textarea:</h4>
+                <textarea id="textarea" name="textarea" rows="4" cols="50">Enter text here...</textarea>
+                <h4>Input Types Files:</h4>
+                <input type="file" id="file" name="file">
+                <h4>Input Types date:</h4>
+                <input type="date" id="date" name="date">
+                <h4>Input Types color:</h4>
+                <input type="color" id="color" name="color">
+            </div>
+
+
+            <h4>Input Types number:</h4>
+            <input type="number" id="number" name="number" min="1" max="10">
+            <h4>Input Types range:</h4>
+            <input type="range" id="range" name="range" min="1" max="100">
+            <h4>Input Types time:</h4>
+            <input type="time" id="time" name="time">
+            <h4>Input Types email:</h4>
+            <input type="email" id="email" name="email">
+            <h4>Input Types url:</h4>
+            <input type="url" id="url" name="url">
+            <h4>Input Types tel:</h4>
+            <input type="tel" id="tel" name="tel">
+            <h4>Input Types password:</h4>
+            <input type="password" name="password">
+            <h4>Input Types Submit:</h4>
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+    <div class="tbls">
+
+        <h3>Table Tag in html</h3>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 3, Cell 1</td>
+                <td>Row 3, Cell 2</td>
+                <td>Row 3, Cell 3</td>
+            </tr>
+        </table>
+        <h3>List Tag in html</h3>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <h3>Link Tag in html</h3>
+        <a href="https://www.google.com" target="_blank">Google</a>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+    </div>
+    <div class="othr">
+        <h2>Others Tag in html</h2>
+
+        <div class="myfrm">
+            <div>
+                <h2>Audio Tag:</h2><audio controls>
+                    <source src="audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div>
+                <h2>Video Tag:</h2>
+                <video width="320" height="240" controls autoplay>
+                    <source src="M:\Rameshwaram\PXL_20231023_124120704.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="myfrm">
+            <div>
+                <h3>Image Tag:</h3>
+                <a href="https://wallsdesk.com/wp-content/uploads/2016/12/Panda-High-Definition-Wallpapers-.jpg"
+                    target="_blank">
+                    <img src="https://wallsdesk.com/wp-content/uploads/2016/12/Panda-High-Definition-Wallpapers-.jpg"
+                        alt="HTML5" width="300" height="200">
+
+            </div>
+            <div>
+                <h2>Canvas Tag:</h2>
+                <canvas id="myCanvas" width="300" height="200" style="border:1px solid #000000;"></canvas>
+                <script>
+                    var c = document.getElementById("myCanvas");
+                    var ctx = c.getContext("2d");
+                    ctx.font = "30px Arial";
+                    ctx.fillText("Hello World", 10, 50);
+                </script>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
