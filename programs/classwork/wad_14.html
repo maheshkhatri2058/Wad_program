@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+     <style>
+        form{
+           border: 2px solid black;
+           padding: 10px;
+           margin: 10px;
+           width: 50%;
+        }
+        .myfrm input{
+            width: 60%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        
+        input[type="submit"]{
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+            border: none;
+        }
+        input[type="submit"]:hover{
+            background-color: darkblue;
+        }
+        input[type="reset"]{
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+            border: none;
+        }
+        input[type="reset"]:hover{
+            background-color: darkred;
+        }
+        h2{
+            text-align: center;
+            color: blue;
+        }
+        h3{
+            color: green;
+        }
+        label
+        {
+            padding: 4px;
+        }
+        input{
+            border: 2px solid gray;
+            border-radius: 4px;
+        }
+
+     </style>
+
+</head>
+<body>
+    <h2>Different types Of forms</h2>
+    <form class="myfrm">
+        <h2>Form for user Infromation</h2>
+        <label>Enter Your Name</label><br>
+        <input type="text" placeholder="Enter your Name"><br>
+        <label>Enter Your Emai Id:</label><br>
+        <input type="email" placeholder="Enter your Email Id"><br>
+        <label>Enter Your Password</label><br>
+        <input type="password" placeholder="Enter your Password"><br>
+        <input type="submit" name="submit " value="Submit">
+    </form>
+    <form>
+        <h2>From for user details</h2>
+        <h3>Select Your Gender:</h3>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <h3>choose Your Hobbies:</h3>
+        <h3>
+        Playing<input type="checkbox" value="Playing">
+        Dancing<input type="checkbox" value="Playing">
+        Reading<input type="checkbox" value="Playing">
+     </h3>
+     <label>enter Your age:</label>
+     <input type="number" max="70" min="10" placeholder="Enter your age">
+     <h3>Slect your Favourite color:</h3>
+     <input type="color">
+     <input type="submit" value="submit">
+         
+
+    </form>
+    <form>
+        <h2>Form for some additional Information about users</h2>
+        <h3>Select your Photo:</h3>
+        <input type="image" src="">
+        <h3>Select your resume:</h3>
+        <input type="file">
+        <h3>Choose date:</h3>
+        <input type="date">
+        <input type="submit">
+        <input type="reset">
+    </form>
+    
+</body>
+</html

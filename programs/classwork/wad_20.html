@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas Shape Drawing</title>
+</head>
+<body>
+
+<canvas id="myCanvas" width="400" height="400" style="border:1px solid #ccc;"></canvas>
+
+<script>
+  const canvas = document.getElementById("myCanvas");
+  const ctx = canvas.getContext("2d");
+
+  // --- Ellipse ---
+  ctx.beginPath();
+  ctx.ellipse(200, 120, 80, 50, 0, 0, 2 * Math.PI);  // x, y, radiusX, radiusY
+  ctx.stroke();
+
+  // --- Left Small Rectangle ---
+  ctx.beginPath();
+  ctx.rect(108, 100, 15, 30);  // x, y, width, height
+  ctx.stroke();
+
+  // --- Right Small Rectangle ---
+  ctx.beginPath();
+  ctx.rect(278, 100, 15, 30);
+  ctx.stroke();
+
+  // --- Triangle inside the Ellipse ---
+  ctx.beginPath();
+  ctx.moveTo(200, 90);   // Top of triangle
+  ctx.lineTo(185, 130);  // Bottom-left
+  ctx.lineTo(215, 130);  // Bottom-right
+  ctx.closePath();
+  ctx.stroke();
+
+  // --- Bottom Rectangle ---
+  ctx.beginPath();
+  ctx.rect(130, 170, 140, 90);  // x, y, width, height
+  ctx.stroke();
+</script>
+
+</body>
+</html>
