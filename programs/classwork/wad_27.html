@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas Shapes</title>
+  <style>
+    .canvas-container {
+      text-align: center;
+      margin: 20px;
+      font-family: Arial, sans-serif;
+    }
+    .labels span {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0 15px;
+    }
+    .rectangle-label { color: red; }
+    .circle-label { color: blue; }
+  </style>
+</head>
+<body>
+
+<div class="canvas-container">
+  <canvas id="myCanvas" width="400" height="300" style="border:1px solid #000;"></canvas>
+  <div class="labels">
+    <span class="rectangle-label">rectangle</span>
+    <span class="circle-label">circle</span>
+  </div>
+</div>
+
+<script>
+  const ctx = document.getElementById("myCanvas").getContext("2d");
+
+  // Rectangle
+  ctx.strokeStyle = "blue";
+  ctx.lineWidth = 2;
+  ctx.strokeRect(75, 50, 250, 200);
+
+  // Circle
+  ctx.beginPath();
+  ctx.arc(200, 150, 50, 0, Math.PI * 2);
+  ctx.strokeStyle = "green";
+  ctx.stroke();
+
+  // Horizontal line
+  ctx.beginPath();
+  ctx.moveTo(75, 150);
+  ctx.lineTo(325, 150);
+  ctx.strokeStyle = "black";
+  ctx.lineWidth = 2;
+  ctx.stroke();
+</script>
+
+</body>
+</html>

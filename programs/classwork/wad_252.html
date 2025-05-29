@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Web workers ApI</h1>
+    <p>
+        count number:
+        <output id="result"></output>
+    </p>
+    <button onclick="startworkers()">start</button>
+    <button onclick="stopworkers()">stop</button>
+    <script>
+        let w;
+        const x=document.getElementById("result");
+        function startworkers(){
+            if(typeof(Worker)!=="undefined")
+            {
+                if(typeof(w)=="undefined")
+            {
+                w=new Worker("demo.js");
+            }
+             w.onmessage=function(event)
+             {
+                x.innerHTML=event.data;
+             };
+            }
+            else{
+                x.innerHTML="Sorry! Your browser doesn't support Web Workers.";
+            }
+
+
+        }
+        function stopworkers(){
+            w.terminate();
+            w=null;
+        }
+    </script>
+    <script src="demo.js"></script>
+
+
+    
+</body>
+</html>

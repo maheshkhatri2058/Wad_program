@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+nav{
+    display: flex;
+    background-color: rgb(12, 83, 213);
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: none;
+    padding: 0px 10px;
+    color: white;
+    padding: 15px;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    list-style: none;
+    padding-right: 40px;
+}
+li{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+#logo{
+    color: tomato;
+    font-family: 'Courier New', Courier, monospace0;
+    font-style: bold;
+}
+#section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:550px;
+    background-image: url("https://cdn.nimbusthemes.com/2017/09/09233341/Free-Nature-Backgrounds-Seaport-During-Daytime-by-Pexels.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+}
+#section1 h1{
+    font-size:45px;
+    font-weight: bolder;
+    color: brown;
+}
+#section1 p{
+    font-size: 25px;
+    color: white;
+    font-style: bold;
+}
+#section2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     gap: 1rem;
+    background-color: rgb(194, 196, 198);
+    padding: 10px;
+    overflow-x: hidden;
+}
+#section2 img{
+    width: 400px;
+    height: 300px;
+}
+#section2 div{
+    padding: 20px;
+    box-shadow: 20px;
+}
+footer{
+    background-color: slategray;
+    padding: 10px;
+    align-items: center;
+text-align: center;
+}
+</style>
+</head>
+
+<body>
+    <nav>
+        <h2 id="logo">MyWebsites</h2>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <!-- constent section   -->
+     <section>
+        <div id="section1">
+            <h1>Welcome to our webpage</h1>
+             <p>
+                lets explore the world together, Travel with us to explore the every corner of the world
+            </p>
+            <div>
+                <input type="text" placeholder="Enter your Email" style="height: 2px solid black; padding:10px;border-radius:10px;">
+                <button style="padding:10px; border-radius:10px; border:2px solid black;background-color:rgb(234, 249, 62)">
+                    Join Now
+                </button>
+            </div>
+
+        </div>
+     </section>
+     <!-- service secction  -->
+      <section id="section2">
+        <div>
+            <img src="https://tse1.explicit.bing.net/th/id/OIP.LjsXuuso9sdcMgElme7Y3AHaE8?rs=1&pid=ImgDetMain">
+            <h2>World Tour-Paris</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, unde.lorem20 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia numquam veniam ea soluta accusantium porro voluptatibus aspernatur quod vel quas!
+
+            </p>
+        </div>
+         <div>
+            <img src="https://a.cdn-hotels.com/gdcs/production50/d466/57509260-2802-4bc1-85d3-1b45c7f668d6.jpg">
+            <h2>World Tour-London</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, unde.lorem20 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia numquam veniam ea soluta accusantium porro voluptatibus aspernatur quod vel quas!
+
+            </p>
+        </div>
+         <div>
+            <img src="https://tse3.mm.bing.net/th/id/OIP.ER06BmUOvq03leC-DGEY8AHaFP?w=1024&h=724&rs=1&pid=ImgDetMain">
+            <h2>World Tour-Sydney</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, unde.lorem20 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia numquam veniam ea soluta accusantium porro voluptatibus aspernatur quod vel quas!
+
+            </p>
+        </div>
+
+      </section>
+     <!-- footer section   -->
+      <footer>
+        <div>
+            <p>&copy;privacy and policy By My website 2025@</p>
+        </div>
+      </footer>
+
+    
+</body>
+</html>

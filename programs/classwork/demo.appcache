@@ -1,0 +1,13 @@
+    CACHE MANIFEST
+    #Version 1.0
+     CACHE:
+     index.html
+     style.css
+     demo.js
+     https://vai.placeholder.com/150
+
+     FALLBACK:
+     / wad_26.html
+
+     NETWORK:
+     *
