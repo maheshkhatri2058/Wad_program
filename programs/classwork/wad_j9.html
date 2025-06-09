@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .prnt{
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+            color: blue;
+            border: 2px solid black;
+            display: flex;
+            padding: 10px;
+            gap: 10px;
+            flex-wrap: wrap;
+            flex-grow: 120px;
+        
+        }
+        .prnt div{
+            border: 2px solid rgb(9, 40, 247);
+            width: 450px;
+            padding: 10px;
+            display: flex;
+            flex: auto;
+        }
+        .chld4{
+            flex: auto;
+            order: 2;
+            flex-shrink: 10px;
+        }
+    
+    </style>
+</head>
+<body>
+    <h2>
+        Flex Properties:
+    </h2>
+    <div class="prnt">
+        <div class="chld1">
+            <h2>Child1</h2>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis doloremque rerum fugiat fuga? Impedit, cupiditate harum accusantium molestiae ab natus.
+        </div>
+        <div class="chld2">
+            <h2>Child2</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem rem quidem consectetur voluptas qui pariatur ullam possimus autem voluptates dolor!
+        </div>
+         <div class="chld3">
+            <h2>Child3</h2>
+
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis doloremque rerum fugiat fuga? Impedit, cupiditate harum accusantium molestiae ab natus.
+        </div>
+        <div class="chld4">
+            <h2>Child4</h2>
+
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem rem quidem consectetur voluptas qui pariatur ullam possimus autem voluptates dolor!
+        </div>
+    </div>
+    
+</body>
+</html>
