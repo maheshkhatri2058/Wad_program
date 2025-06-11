@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Position Example</title>
+  <style>
+    body {
+      height: 2000px;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .box {
+      width: 200px;
+      height: 100px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .static {
+      background-color: #3498db;
+      position: static;
+    }
+
+    .relative {
+      background-color: #e67e22;
+      position: relative;
+      top: 20px;
+      left: 20px;
+    }
+
+    .absolute-container {
+      position: relative;
+      height: 200px;
+      background: #f0f0f0;
+      margin: 20px 0;
+    }
+
+    .absolute {
+      background-color: #2ecc71;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .fixed {
+      background-color: #9b59b6;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+
+    .sticky {
+      background-color: #e74c3c;
+      position: sticky;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box static">Static</div>
+
+  <div class="box relative">Relative</div>
+
+  <div class="absolute-container">
+    <div class="box absolute">Absolute</div>
+  </div>
+
+  <div class="box sticky">Sticky (scroll to test)</div>
+
+  <div class="box fixed">Fixed (bottom-right)</div>
+
+</body>
+</html>
