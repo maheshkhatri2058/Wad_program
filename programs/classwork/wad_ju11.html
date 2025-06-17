@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-size: 1.5rem;
+    }
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sidebar h1{
+    display: none;
+}
+.box{
+    border: 2px solid black;
+    padding: 10px;
+}
+img{
+    max-width: 80%;
+    height: auto;
+}
+@media (min-width:768px) {
+    .sidebar h1{
+        display: block
+    }
+    .sidebar h2{
+        display: none;
+    }
+    .container{
+        flex-direction: row;
+    }
+    .box{
+        background-color: azure;
+        box-shadow: 10px beige;    
+    }
+    
+}
+</style>
+<body>
+    <div class="sidebar">
+        <h2>Mobile View</h2>
+        <h1>Desktop view</h1>
+    </div>
+    <div class="container">
+        <div class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, ullam non. Impedit tenetur explicabo nulla culpa aperiam nam necessitatibus vel, voluptate id eveniet magnam corporis quos, officia iusto vitae quae aut esse quaerat consectetur perspiciatis assumenda maxime officiis laudantium ipsum. Nesciunt aliquam libero quia amet. Voluptatibus explicabo inventore nostrum doloremque.
+        </div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione molestias doloremque eveniet et ipsam fugit dolorum fugiat atque dicta labore accusamus at optio consequuntur aliquid minima aut qui facere voluptatem, nisi, consequatur accusantium, dolorem odit alias! Consectetur quis, exercitationem veniam quae placeat cumque, consequuntur velit iste ea iure non nulla!</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione molestias doloremque eveniet et ipsam fugit dolorum fugiat atque dicta labore accusamus at optio consequuntur aliquid minima aut qui facere voluptatem, nisi, consequatur accusantium, dolorem odit alias! Consectetur quis, exercitationem veniam quae placeat cumque, consequuntur velit iste ea iure non nulla!</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione molestias doloremque eveniet et ipsam fugit dolorum fugiat atque dicta labore accusamus at optio consequuntur aliquid minima aut qui facere voluptatem, nisi, consequatur accusantium, dolorem odit alias! Consectetur quis, exercitationem veniam quae placeat cumque, consequuntur velit iste ea iure non nulla!</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione molestias doloremque eveniet et ipsam fugit dolorum fugiat atque dicta labore accusamus at optio consequuntur aliquid minima aut qui facere voluptatem, nisi, consequatur accusantium, dolorem odit alias! Consectetur quis, exercitationem veniam quae placeat cumque, consequuntur velit iste ea iure non nulla!</div>
+    </div>
+    <img src="https://picfiles.alphacoders.com/305/305501.jpg" alt="Lake image">
+</body>
+</html>
