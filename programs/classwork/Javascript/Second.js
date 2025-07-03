@@ -19,3 +19,11 @@ function greet(dun)
   dun();
 }
 greet(h);
+function hello()
+{
+  return function hii()
+  {
+    console.log("Hello muj");
+  }
+}
+console.log(hello());
