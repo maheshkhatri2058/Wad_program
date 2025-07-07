@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #d1 ,#d2
+    {
+        background-color: red;
+    }
+    #p1,#p2{
+        background-color: blue;
+    }
+</style>
+</head>
+<body>
+    <div id="d1">
+        <h2>Bubbling:</h2>
+        <p id="p1">
+            click me!
+            </p>
+
+    </div><br>
+     <div id="d2">
+        <h2>Capturing:</h2>
+        <p id="p2">
+            click me
+            </p>
+
+    </div><br>
+    <script>
+        document.getElementById("p1").addEventListener("click",function()
+        {
+            alert("p1 clicked");
+
+        },false);
+        document.getElementById("p2").addEventListener("click",function()
+        {
+            alert("p2 clicked");
+
+        },false)
+    </script>
+
+   
+    
+</body>
+</html>
