@@ -12,7 +12,9 @@
         <p ng-bind="name"></p>
         <h2>Two way binding!!</h2>
         <input type="text" ng-model="namae">
-<p>{{namae}}</p>
+<p>{{namae|uppercase}}</p>
+<h2>Filtering in Angular js:</h2>
+<h2>Price:{{cost|currency}}</h2>
 
     </div>
     <script>
@@ -20,6 +22,7 @@
         app.controller('myctrl',function($scope)
         {
         $scope.name="mahesh";
+        $scope.cost=1000;
 
         })
     </script>
