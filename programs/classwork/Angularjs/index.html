@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <title>Angular Js</title>
+</head>
+<body>
+    <div ng-app="myapp" ng-controller="myctrl">
+        <h2>Angular js exampleee!!</h2>
+        <p style="font-size: 24px;font-style:itlaic;">Hello {{name}}</p>
+        <h2 mydirective></h2>
+        <h2 ng-click="changename()">{{name}}</h2>
+
+    </div>
+    <script>
+        var app=angular.module("myapp",[]);
+        app.controller("myctrl",function($scope){
+            $scope.name="Arey Pagal Hey kya?"
+        })
+        app.directive("mydirective",()=>
+        {
+            return{
+                template:"hello word!"
+            }
+        })
+        $scope.changename=()=>
+        {
+            $scope.name="Arey Pagal Hey kya?"
+        }
+    </script>
+    
+</body>
+</html>

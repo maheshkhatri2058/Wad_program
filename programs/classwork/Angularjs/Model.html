@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body ng-app="myapp">
+    <div ng-controller="myctrl">
+        <p ng-bind="name"></p>
+        <h2>Two way binding!!</h2>
+        <input type="text" ng-model="namae">
+<p>{{namae}}</p>
+
+    </div>
+    <script>
+        var app=angular.module('myapp',[]);
+        app.controller('myctrl',function($scope)
+        {
+        $scope.name="mahesh";
+
+        })
+    </script>
+
+
+    
+</body>
+</html>
